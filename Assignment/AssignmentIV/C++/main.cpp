@@ -12,6 +12,7 @@
     - 2025/11/11: Initial implementation
 
    Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
+   Student: Jui-Heng Hsu <RayH5487@gmail.com>
  */
 
 #include <iostream>
