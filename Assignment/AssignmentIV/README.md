@@ -92,7 +92,7 @@ Email: [RayH5487@gmail.com]
   ```
   === Hash Function Observation (C Version) ===
 
- === Table Size m = 10 ===
+  === Table Size m = 10 ===
   Key     Index
   -----------------
   21      9
@@ -142,8 +142,8 @@ Email: [RayH5487@gmail.com]
   === String Hash (m = 10) ===
   Key     Index
   -----------------
-  cat     0
-  dog     0
+  cat     3
+  dog     2
   ...
 
   === String Hash (m = 11) ===
@@ -156,8 +156,8 @@ Email: [RayH5487@gmail.com]
   === String Hash (m = 37) ===
   Key     Index
   -----------------
-  cat     0
-  dog     0
+  cat     32
+  dog     21
   ...
   ```
 
