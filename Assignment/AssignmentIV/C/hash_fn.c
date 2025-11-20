@@ -9,19 +9,37 @@
    Development History:
     - 2025/11/11: Initial implementation
     - 2025/11/17: Refactored to use hash_fn.h
-
-   Developer: Yu-Feng Huang <yfhuang@saturn.yzu.edu.tw>
+    - 2025/11/20: copy and change hash_fn.cpp's code to C
+   Developer: Jui-Heng Hsu <RayH5487@gmail.com>
  */
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
 #include "hash_fn.h"
 
 int myHashInt(int key, int m) {
-    // TODO: replace with your own design
-    return key % m;  // division method example
+    int k;//temp
+    k=key*m;//set k
+    k+=key;//k+key
+    k-=(int)pow(m,2);//k-m^2
+    if(k<0){
+        k*=-1;//if k negative change k to postive
+    }
+    return k;
 }
 
 int myHashString(const char* str, int m) {
-    unsigned long hash = 0;
-    // TODO: replace with your own design
-    return (int)(hash % m); // basic division method
+    int s;//temp
+    if(str==NULL){return 0;}//error handing
+    s=strlen(str);//set s
+    for(int i=0; i<strlen(str); i++)
+    {
+         s+=(int)str[i];//s+ASCLL(str[0],str[1]...str[str.size()])
+    }
+    s-=m;//s-m
+    if(s<0){
+        s*=-1;//if s negative change s to postive
+    }
+    return s;
 }
