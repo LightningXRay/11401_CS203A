@@ -19,8 +19,8 @@
 #include "hash_fn.hpp"
 using namespace std;
 int myHashInt(int key, int m) {
-    int k=1;//k:temp
-    while(key>1){//k+key+key/2+key/4...+2
+    int k=1;
+    while(key>1){
         k+=key;
         key/=2;
     }
@@ -28,18 +28,18 @@ int myHashInt(int key, int m) {
 }
 
 int myHashString(const string& str, int m) {
-    int s,n;//temp
-    if(str.empty()){return 0;}//error handing
-    s=str.size();//set s
-    n=int('a');//set 'a'=0 'b'=1...in calculation
-    for(int i=0; i<str.size(); i++)
-    {
-         s+=i*(int(str[i])-n+1);//s+i*(str[0],str[1]...str[str.size()]) a=0
-         s%=m;//s mod m
-    }
-    s+=int(str[0])%m;
-    if(s<0){
-        s*=-1;//if s negative change s to postive
-    }
-    return s%m;
+  int s,n;//temp
+  if(str.empty()){return 0;}//prevent NULL string
+  s=str.size();
+  n=int('a');
+  for(int i=0; i<str.size(); i++)
+  {
+       s+=i*(int(str[i])-n+1);//set 'a'=0 'b'=1...in calculation and +1 to prevent i*0
+       s%=m;
+  }
+  s+=int(str[0])%m;
+  if(s<0){
+      s*=-1;//if s negative change s to postive
+  }
+  return s%m;
 }
