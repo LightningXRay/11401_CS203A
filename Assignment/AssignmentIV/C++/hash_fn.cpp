@@ -10,6 +10,7 @@
     - 2025/11/18: add namespace delete hint
     - 2025/11/19: add hash function and include
     - 2025/11/20: add error handling for string , upgrade string's hash function
+    - 2025/11/20: remake hash funtion
    Developer: Jui-Heng Hsu <RayH5487@gmail.com>
  */
 #include <iostream>
@@ -18,27 +19,27 @@
 #include "hash_fn.hpp"
 using namespace std;
 int myHashInt(int key, int m) {
-    int k;//temp
-    k=key*m;//set k
-    k+=key;//k+key
-    k-=pow(m,2);//k-m^2
-    if(k<0){
-        k*=-1;//if k negative change k to postive
+    int k=1,n=1;//k:temp
+    while(key!=1){//k+key+key/2+key/4...+2
+        k+=key;
+        key/=2;
     }
-    return k;
+    return k%m;
 }
 
 int myHashString(const string& str, int m) {
-    int s;//temp
+    int s,n;//temp
     if(str.empty()){return 0;}//error handing
     s=str.size();//set s
+    n=int('a');//set 'a'=0 'b'=1...in calculation
     for(int i=0; i<str.size(); i++)
     {
-         s+=int(str[i]);//s+ASCLL(str[0],str[1]...str[str.size()])
+         s+=i*(int(str[i])-n+1);//s+i*(str[0],str[1]...str[str.size()]) a=0
+         s%=m;//s mod m
     }
-    s-=m;//s-m
+    s+=int(str[0])%m;
     if(s<0){
         s*=-1;//if s negative change s to postive
     }
-    return s;
+    return s%m;
 }
