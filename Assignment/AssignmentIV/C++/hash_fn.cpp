@@ -29,7 +29,6 @@ int myHashInt(int key, int m) {
 }
 
 int myHashString(const string& str, int m) {
-    unsigned long hash = 0;
     int s;//temp
     if(str.empty()){return 0;}//error handing
     s=str.size();//set s
