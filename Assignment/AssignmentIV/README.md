@@ -11,9 +11,18 @@ Email: [RayH5487@gmail.com]
 ### Integer Keys 
 - Formula / pseudocode:
   ```text
-  [Your implementation here]
+  [
+  int myHashInt(int key, int m) {
+    int k=1;//k:temp
+    while(key>1){//k+key+key/2+key/4...+2
+        k+=key;
+        key/=2;
+    }
+    return k%m;
+  }
+  ]
   ```
-- Rationale: [Explain your design choices and how they minimize collisions.]
+- Rationale: [藉由不斷在k上加key/(2^n)來最大程度打散key，此程式只要key和m越大，他key就打得越散]
 
 ### Non-integer Keys
 - Formula / pseudocode:
