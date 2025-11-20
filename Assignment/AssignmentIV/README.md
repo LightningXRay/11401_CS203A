@@ -12,14 +12,12 @@ Email: [RayH5487@gmail.com]
 - Formula / pseudocode:
   ```text
   [
-  int myHashInt(int key, int m) {
     int k=1;
     while(key>1){
         k+=key;
         key/=2;
     }
     return k%m;
-  }
   ]
   ```
 - Rationale: [藉由不斷在k上加key/(2^n)來最大程度打散key，此程式只要key和m越大，他key就打得越散]
