@@ -13,8 +13,8 @@ Email: [RayH5487@gmail.com]
   ```text
   [
   int myHashInt(int key, int m) {
-    int k=1;//k:temp
-    while(key>1){//k+key+key/2+key/4...+2
+    int k=1;
+    while(key>1){
         k+=key;
         key/=2;
     }
@@ -27,9 +27,24 @@ Email: [RayH5487@gmail.com]
 ### Non-integer Keys
 - Formula / pseudocode:
   ```text
-  [Your implementation here]
+  [
+    int s,n;//temp
+    if(str.empty()){return 0;}//prevent NULL string
+    s=str.size();
+    n=int('a');
+    for(int i=0; i<str.size(); i++)
+    {
+         s+=i*(int(str[i])-n+1);//set 'a'=0 'b'=1...in calculation and +1 to prevent i*0
+         s%=m;
+    }
+    s+=int(str[0])%m;
+    if(s<0){
+        s*=-1;//if s negative change s to postive
+    }
+    return s%m;
+  ]
   ```
-- Rationale: []
+- Rationale: [先設s=str的長度,a=0,b=1...，再讓s不停加上i*str[i]，期間加上s%m避免溢出，最後s+=int(str[0])%m避免像aut,uat這樣的換位相等]
 
 ## Experimental Setup
 - Table sizes tested (m): 10, 11, 37
@@ -179,9 +194,7 @@ Email: [RayH5487@gmail.com]
 ## Analysis
 - Prime vs non-prime `m`: Prime table sizes generally result in better distribution and fewer collisions.
 - Patterns or collisions: Non-prime table sizes tend to produce repetitive patterns, leading to more collisions.
-- Improvements: Use a prime table size and a well-designed hash function to enhance distribution.
+- Improvements: 透過特殊變換來最大程度打亂分布
 
 ## Reflection
-1. Designing hash functions requires balancing simplicity and effectiveness to minimize collisions.
-2. Table size significantly impacts the uniformity of the hash distribution, with prime sizes performing better.
-3. The design using a prime table size and a linear transformation formula produced the most uniform index sequence.
+1. 
