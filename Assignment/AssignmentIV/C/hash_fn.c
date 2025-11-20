@@ -13,33 +13,34 @@
    Developer: Jui-Heng Hsu <RayH5487@gmail.com>
  */
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-#include <math.h>
-#include "hash_fn.h"
-
+#include <stdlib.h>
 int myHashInt(int key, int m) {
-    int k;//temp
-    k=key*m;//set k
-    k+=key;//k+key
-    k-=(int)pow(m,2);//k-m^2
-    if(k<0){
-        k*=-1;//if k negative change k to postive
+    int k=0;
+    if(key<1 || m<1){
+        printf("Wrong Input");
+        return 0;//Error handing
     }
-    return k;
+    while (key>1){
+        k+=key;
+        key/=2;
+    }
+    return k%m;
 }
-
 int myHashString(const char* str, int m) {
-    int s;//temp
-    if(str==NULL){return 0;}//error handing
-    s=strlen(str);//set s
-    for(int i=0; i<strlen(str); i++)
-    {
-         s+=(int)str[i];//s+ASCLL(str[0],str[1]...str[str.size()])
+    if(str==NULL || m<1) {
+        printf("Wrong Input\n");
+        return 0;//Error handing
     }
-    s-=m;//s-m
-    if(s<0){
+    int s=strlen(str);
+    int n=(int)'a';
+    for(int i=0;strlen(str); i++) {
+        s+=i*((int)str[i]-n+1);//set 'a'=0 'b'=1...in calculation and +1 to prevent i*0
+        s%=m;
+    }
+    s+=((int)str[0])%m;
+    if (s < 0) {
         s*=-1;//if s negative change s to postive
     }
-    return s;
+    return s%m;
 }
