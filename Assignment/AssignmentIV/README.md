@@ -20,7 +20,7 @@ Email: [RayH5487@gmail.com]
   ```text
   [Your implementation here]
   ```
-- Rationale: [Explain your approach and its effectiveness for non-integer keys.]
+- Rationale: []
 
 ## Experimental Setup
 - Table sizes tested (m): 10, 11, 37
