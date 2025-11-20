@@ -19,7 +19,7 @@
 #include "hash_fn.hpp"
 using namespace std;
 int myHashInt(int key, int m) {
-    int k=1,n=1;//k:temp
+    int k=1;//k:temp
     while(key!=1){//k+key+key/2+key/4...+2
         k+=key;
         key/=2;
