@@ -42,9 +42,9 @@ Email: [RayH5487@gmail.com]
 ## Results
 | Table Size (m) | Index Sequence         | Observation              |
 |----------------|------------------------|--------------------------|
-| 10             | 1, 2, 3, 4, ...        | Pattern repeats every 10 |
-| 11             | 10, 0, 1, 2, ...       | More uniform             |
-| 37             | 20, 21, 22, 23, ...    | Near-uniform             |
+| 10             | 9, 1, 2, 6, ...        |即便key升序排列，index也沒有規律|
+| 11             | 6, 8, 9, 2, ...       | More uniform             |
+| 37             | 2, 4, 5, 9, ...    | Near-uniform             |
 
 ## Compilation, Build, Execution, and Output
 
@@ -92,25 +92,25 @@ Email: [RayH5487@gmail.com]
   ```
   === Hash Function Observation (C Version) ===
 
-  === Table Size m = 10 ===
+ === Table Size m = 10 ===
   Key     Index
   -----------------
-  21      1
-  22      2
+  21      9
+  22      1
   ...
 
   === Table Size m = 11 ===
   Key     Index
   -----------------
-  21      10
-  22      0
+  21      6
+  22      8
   ...
 
   === Table Size m = 37 ===
   Key     Index
   -----------------
-  21      21
-  22      22
+  21      2
+  22      4
   ...
 
   === Hash Function Observation (C++ Version) ===
@@ -118,22 +118,22 @@ Email: [RayH5487@gmail.com]
   === Table Size m = 10 ===
   Key     Index
   -----------------
-  21      1
-  22      2
+  21      9
+  22      1
   ...
 
   === Table Size m = 11 ===
   Key     Index
   -----------------
-  21      10
-  22      0
+  21      6
+  22      8
   ...
 
   === Table Size m = 37 ===
   Key     Index
   -----------------
-  21      21
-  22      22
+  21      2
+  22      4
   ...
   ```
 
@@ -164,9 +164,9 @@ Email: [RayH5487@gmail.com]
 - Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
 - Example output for integers:
   ```
-  Hash table (m=10): [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-  Hash table (m=11): [10, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-  Hash table (m=37): [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, ...]
+  Hash table (m=10): [9, 1, 2, 6, 7, 9, 0, 3, 4, 6, ...]
+  Hash table (m=11): [6, 8, 9, 2, 3, 5, 6, 9, 10, 1, ...]
+  Hash table (m=37): [2, 4, 5, 9, 10, 12, 13, 16, 17, 19, ...]
   ```
 - Example output for strings:
   ```
