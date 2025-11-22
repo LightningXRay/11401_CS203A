@@ -110,21 +110,71 @@ Email: [RayH5487@gmail.com]
   -----------------
   21      9
   22      1
-  ...
-
+  23      2
+  24      6
+  25      7
+  26      9
+  27      0
+  28      3
+  29      4
+  30      6
+  51      8
+  52      1
+  53      2
+  54      4
+  55      5
+  56      9
+  57      0
+  58      2
+  59      3
+  60      6
   === Table Size m = 11 ===
-  Key     Index
+  Key   Index
   -----------------
-  21      6
-  22      8
-  ...
+  21    6
+  22    8
+  23    9
+  24    2
+  25    3
+  26    5
+  27    6
+  28    9
+  29    10
+  30    1
+  51    10
+  52    2
+  53    3
+  54    5
+  55    6
+  56    10
+  57    0
+  58    2
+  59    3
+  60    6
 
   === Table Size m = 37 ===
-  Key     Index
+  Key   Index
   -----------------
-  21      2
-  22      4
-  ...
+  21    2
+  22    4
+  23    5
+  24    9
+  25    10
+  26    12
+  27    13
+  28    16
+  29    17
+  30    19
+  51    24
+  52    27
+  53    28
+  54    30
+  55    31
+  56    35
+  57    36
+  58    1
+  59    2
+  60    5
 
   === Hash Function Observation (C++ Version) ===
 
@@ -133,59 +183,127 @@ Email: [RayH5487@gmail.com]
   -----------------
   21      9
   22      1
-  ...
-
+  23      2
+  24      6
+  25      7
+  26      9
+  27      0
+  28      3
+  29      4
+  30      6
+  51      8
+  52      1
+  53      2
+  54      4
+  55      5
+  56      9
+  57      0
+  58      2
+  59      3
+  60      6
   === Table Size m = 11 ===
-  Key     Index
+  Key   Index
   -----------------
-  21      6
-  22      8
-  ...
+  21    6
+  22    8
+  23    9
+  24    2
+  25    3
+  26    5
+  27    6
+  28    9
+  29    10
+  30    1
+  51    10
+  52    2
+  53    3
+  54    5
+  55    6
+  56    10
+  57    0
+  58    2
+  59    3
+  60    6
 
   === Table Size m = 37 ===
-  Key     Index
+  Key   Index
   -----------------
-  21      2
-  22      4
-  ...
-  ```
-
+  21    2
+  22    4
+  23    5
+  24    9
+  25    10
+  26    12
+  27    13
+  28    16
+  29    17
+  30    19
+  51    24
+  52    27
+  53    28
+  54    30
+  55    31
+  56    35
+  57    36
+  58    1
+  59    2
+  60    5
+  
 - Example output for strings:
-  ```
-  === String Hash (m = 10) ===
-  Key     Index
+  ```  === String Hash (m = 10) ===
+  Key   Index
   -----------------
-  cat     3
-  dog     2
-  ...
+  cat   3
+  dog   2
+  bat   2
+  cow   3
+  ant   4
+  owl   1
+  bee   6
+  hen   0
+  pig   8
+  fox   8
 
   === String Hash (m = 11) ===
-  Key     Index
+  Key   Index
   -----------------
-  cat     0
-  dog     0
-  ...
+  cat   0
+  dog   0
+  bat   10
+  cow   9
+  ant   0
+  owl   7
+  bee   6
+  hen   8
+  pig   6
+  fox   3
 
   === String Hash (m = 37) ===
-  Key     Index
+  Key   Index
   -----------------
-  cat     32
-  dog     21
-  ...
-  ```
+  cat   32
+  dog   21
+  bat   31
+  cow   15
+  ant   6
+  owl   13
+  bee   5
+  hen   29
+  pig   27
+  fox   20
 
 - Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
 - Example output for integers:
   ```
-  Hash table (m=10): [9, 1, 2, 6, 7, 9, 0, 3, 4, 6, ...]
-  Hash table (m=11): [6, 8, 9, 2, 3, 5, 6, 9, 10, 1, ...]
-  Hash table (m=37): [2, 4, 5, 9, 10, 12, 13, 16, 17, 19, ...]
+  Hash table (m=10): [9, 1, 2, 6, 7, 9, 0, 3, 4, 6, 8, 1, 2, 4, 5, 9, 0, 2, 3, 6]
+  Hash table (m=11): [6, 8, 9, 2, 3, 5, 6, 9, 10, 1, 10, 2, 3, 5, 6, 10, 0, 2, 3, 6]
+  Hash table (m=37): [2, 4, 5, 9, 10, 12, 13, 16, 17, 19, 24, 27, 28, 30, 31, 35, 36, 1, 2, 5]
   ```
 - Example output for strings:
   ```
-  Hash table (m=10): ["cat", "dog", "bat", "cow", "ant", ...]
-  Hash table (m=11): ["fox", "cat", "dog", "bat", "cow", ...]
-  Hash table (m=37): ["bee", "hen", "pig", "fox", "cat", ...]
+  Hash table (m=10): ["cat", "dog", "bat", "cow", "ant", "owl", "bee", "hen", "pig", "fox"]
+  Hash table (m=11): ["cat", "dog", "bat", "cow", "ant", "owl", "bee", "hen", "pig", "fox"]
+  Hash table (m=37): ["cat", "dog", "bat", "cow", "ant", "owl", "bee", "hen", "pig", "fox"]
   ```
 - Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
 
@@ -195,4 +313,6 @@ Email: [RayH5487@gmail.com]
 - Improvements: 透過特殊變換來最大程度打亂分布
 
 ## Reflection
-1. 
+1. Designing hash functions requires balancing simplicity and effectiveness to minimize collisions.
+2. Table size significantly impacts the uniformity of the hash distribution, with prime sizes performing better.
+3. The design using a prime table size and a linear transformation formula produced the most uniform index sequence.
