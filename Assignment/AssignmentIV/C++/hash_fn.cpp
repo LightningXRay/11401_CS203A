@@ -25,6 +25,10 @@
 using namespace std;
 int myHashInt(int key, int m) {
     int k=1;
+   if(key<1 || m<1){
+        cout<<"Wrong Input";
+        return 0;//Error handing
+    }
     while(key>1){
         k+=key;
         key/=2;
