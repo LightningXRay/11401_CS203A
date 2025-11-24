@@ -41,4 +41,10 @@ Before you begin, ensure you have the following:
 - Use the built-in terminal in VSCode for advanced Git commands.
 - Enable GitLens extension for enhanced Git insights.
 
+## Compiler
+- Online gdb 主要是我覺得Online gdb比較方便，他不用下載就可以直接用。 而VScode因為mingw在網路上已經沒有可以編譯C++的檔案，所以必須額外使用msys64才能下載。
+- C++
+- Windows10
+
 By following these steps, you can easily connect and manage your GitHub repositories using Visual Studio Code.
+
