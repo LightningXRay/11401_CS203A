@@ -3,6 +3,10 @@
 This assignment focuses on the design and observation of hash functions using C/C++. 
 Students are expected to implement and analyze the behavior of hash functions, 
 evaluate their efficiency, and understand their applications in computer science.
+## Compiler
+- Windows10
+- C++
+- Onlinegdb
 
 Developer: [許睿恒]  
 Email: [RayH5487@gmail.com]  
