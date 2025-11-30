@@ -12,10 +12,6 @@
     - 2025/11/20: add error handling for string , upgrade string's hash function
     - 2025/11/20: remake hash funtion
    Developer: Jui-Heng Hsu <RayH5487@gmail.com>
-   * @brief Computes the hash index for an integer key.
-   * @param key The integer key to hash.
-   * @param m The table size.
-   * @return The computed hash index.
  */
 
 #include <iostream>
