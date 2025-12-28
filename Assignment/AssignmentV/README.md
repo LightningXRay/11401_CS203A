@@ -24,17 +24,22 @@
 2. Binary tree  
    每個節點都只能最多有兩子節點，也不要求如何排序。
 3. Complete binary tree  
-  <img width="1875" height="673" alt="image" src="https://github.com/user-attachments/assets/8c45a634-20dd-404a-9e41-7472d846a7d0" />
-4. Binary search tree (BST)  
-  在Binary tree的規則上再加上，每個節點的左子樹必須全部小於該節點，它的右子樹必須全部大於該節點。
-5. AVL tree  
-  在Binary search tree的規則上再加上，每個節點的左右子樹的高度差必須在+-1內。如果插入或刪除時則需要將其中一個節點視為根重新排序，並且要符合AVL tree的規則。
-6. Red-Black tree  
-  <img width="1285" height="508" alt="image" src="https://github.com/user-attachments/assets/246d0c3c-b471-47c9-9379-d00d82d8a84d" />
+https://tree-visualizer.netlify.app/
+<img width="1875" height="673" alt="image" src="https://github.com/user-attachments/assets/8c45a634-20dd-404a-9e41-7472d846a7d0" />
 
-7. Max heap  
+5. Binary search tree (BST)  
+  在Bi
+
+6. AVL tree  
+  在B
+
+7. Red-Black tree  
+https://www.cs.usfca.edu/~galles/visualization/RedBlack.html
+<img width="1285" height="508" alt="image" src="https://github.com/user-attachments/assets/246d0c3c-b471-47c9-9379-d00d82d8a84d" />
+
+9. Max heap  
   在Complete binary tree的規則上再加上，大小必須由上(最大)至下(最小)排序。
-8. Min heap  
+10. Min heap  
   在Complete binary tree的規則上再加上，大小必須由上(最小)至下(最大)排序。
 
 應用
