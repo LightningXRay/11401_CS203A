@@ -24,7 +24,7 @@
 2. Binary tree  
    每個節點都只能最多有兩子節點，也不要求如何排序。
 3. Complete binary tree  
-  在Binary tree的規則上再加上，每層必須從左至右依序填入，滿了才能去下一層。
+  <img width="1875" height="673" alt="image" src="https://github.com/user-attachments/assets/8c45a634-20dd-404a-9e41-7472d846a7d0" />
 4. Binary search tree (BST)  
   在Binary tree的規則上再加上，每個節點的左子樹必須全部小於該節點，它的右子樹必須全部大於該節點。
 5. AVL tree  
@@ -42,7 +42,7 @@
 2. Binary tree  
    每個節點都只能最多有兩子節點，也不要求如何排序。
 3. Complete binary tree  
-  <img width="1875" height="673" alt="image" src="https://github.com/user-attachments/assets/8c45a634-20dd-404a-9e41-7472d846a7d0" />
+  <
 
 4. Binary search tree (BST)  
   在Binary tree的規則上再加上，每個節點的左子樹必須全部小於該節點，它的右子樹必須全部大於該節點。
