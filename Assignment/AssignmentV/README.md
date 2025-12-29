@@ -45,7 +45,8 @@ https://www.cs.usfca.edu/~galles/visualization/RedBlack.html
 10. Max heap  
   在Complete binary tree的規則上再加上，大小必須由上(最大)至下(最小)排序。
 11. Min heap  
-  在Complete binary tree的規則上再加上，大小必須由上(最小)至下(最大)排序。
+  <img width="1236" height="506" alt="image" src="https://github.com/user-attachments/assets/f00a7ef4-9ed6-4e4a-bb26-b6d67b612f47" />
+
 
 應用
 1. General tree  
