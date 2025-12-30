@@ -24,8 +24,10 @@ Binary search tree-> Red-Black tree(新增限制:子節點最多兩個)
 
 建構
 1. General tree  
-    每個節點沒有子節點限制，也不要求如何排序。
-2. Binary tree  
+https://app.smartdraw.com/editor.aspx?templateId=01bcab48-4f0b-41cb-956d-089e2ef871e4&flags=128#credID=-87527221&depoId=71775251
+   <img width="644" height="509" alt="image" src="https://github.com/user-attachments/assets/bde01308-c362-4d98-b36a-b31b296cc20a" />
+
+3. Binary tree  
 https://tree-visualizer.netlify.app/
 <img width="1560" height="792" alt="image" src="https://github.com/user-attachments/assets/c3e6c6a3-2ef5-405d-8d6a-7fbf8f8e35c5" />
 
