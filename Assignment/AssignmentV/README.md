@@ -56,27 +56,38 @@ https://www.cs.usfca.edu/~galles/visualization/RedBlack.html
   <img width="900" height="400" alt="image" src="https://github.com/user-attachments/assets/f00a7ef4-9ed6-4e4a-bb26-b6d67b612f47" />
 
 
-應用
-1. General tree  
-    在Github幫自己的檔案分類
-2. Binary tree  
-   1
-3. Complete binary tree  
-  <
+General tree  
+在Github幫自己的檔案分類
+透過多個分支分類不同檔案
 
-4. Binary search tree (BST)  
-  3
-5. AVL tree  
-  4
-6. Red-Black tree  
-  5
-7. Max heap  
-  6
-8. Min heap  
-  7
+Binary tree  
+二元運算樹
+
+Complete binary tree  
+比賽列表
+每一層代表:冠軍、冠軍賽、4強賽、8強賽…等賽事
+
+Binary search tree (BST)  
+搜尋引擎
+透過二分法快速搜索
+
+AVL tree  
+搜尋引擎
+因為高度差不多，所以可以讓每一條路徑的搜索速度差不多
+
+Red-Black tree  
+C++的map/tree
+
+Max heap  
+傷者救治
+傷者進醫院後，嚴重的往前排，不嚴重的往後排。
+
+Min heap  
+導航
+記錄所有路徑，如果有用時更短的路徑就往前排
+
 
 AI 使用紀錄  
-
 Chatgpt:
 1.	[1.General tree 2. Binary tree 3. Complete binary tree 4. Binary search tree (BST) 5. AVL tree 6. Red-Black tree 7. Max heap 8. Min heap 給我他們的定義與範例]
 2.	[給我所有我給的樹的應用]
