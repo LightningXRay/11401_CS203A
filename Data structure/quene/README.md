@@ -7,5 +7,5 @@
 | 常見操作 | enqueue / dequeue |
 | 常見用途 | 排程、緩衝區、BFS |
 
-圖片網址:https://www.geeksforgeeks.org/dsa/introduction-and-array-implementation-of-queue/
+來源網址:https://www.geeksforgeeks.org/dsa/introduction-and-array-implementation-of-queue/
 <img width="1082" height="384" alt="image" src="https://github.com/user-attachments/assets/b2b14489-4e57-427f-9964-995ae64ace17" />
