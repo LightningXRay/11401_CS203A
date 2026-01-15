@@ -7,5 +7,7 @@
 | 存取位置 | 只能存取頂端 |
 | 常見用途 | 函式呼叫、括號檢查、DFS |
 
+相關考試:QuizII
+
 來源網址:https://www.geeksforgeeks.org/dsa/stack-data-structure/
 <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/2d72468e-4551-46bf-af40-a6affa6a32e3" />
