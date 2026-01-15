@@ -7,8 +7,12 @@
 | 常見走訪 | BFS / DFS |
 | 常見應用 | 地圖、社群網路、路徑規劃 |
 
+Adjacency List
+
 圖片來源:https://www.geeksforgeeks.org/dsa/adjacency-list-meaning-definition-in-dsa/
 <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/7c8c378d-70a0-4026-b5cd-9a289b182598" />
+
+Adjacency Matrix
 
 圖片來源:https://www.geeksforgeeks.org/dsa/adjacency-matrix/
 <img width="1043" height="746" alt="image" src="https://github.com/user-attachments/assets/7189f9d9-543f-45cf-886b-fe6e135077ff" />
