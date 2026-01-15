@@ -9,7 +9,7 @@
 
 相關作業:AssignmentII
 
-相關作業:QuizII
+相關考試:QuizII
 
 int a[2][4] 
 | a[0][0] | a[0][1] | a[0][2] | a[0][3] |
