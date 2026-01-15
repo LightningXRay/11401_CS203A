@@ -16,6 +16,9 @@
   在Complete binary tree的規則上再加上，大小必須由上(最大)至下(最小)排序，如果該節點不符合則會一格一格往上爬。
 8. Min heap  
   在Complete binary tree的規則上再加上，大小必須由上(最小)至下(最大)排序，如果該節點不符合則會一格一格往上爬。
+
+相關考試:QuizIV
+
 建構
 1. General tree  
 https://app.smartdraw.com/editor.aspx?templateId=01bcab48-4f0b-41cb-956d-089e2ef871e4&flags=128#credID=-87527221&depoId=71775251
